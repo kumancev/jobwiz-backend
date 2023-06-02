@@ -21,7 +21,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "**/*.{js,ts,html,css,json}": ["yarn prettier --write"]
+    "*": ["yarn format"]
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
