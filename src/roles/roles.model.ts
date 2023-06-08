@@ -24,6 +24,7 @@ export class Role extends Model<Role, RoleCreationAttrs> {
     primaryKey: true,
   })
   id: number
+
   @ApiProperty({ example: 'ADMIN', description: 'User role name' })
   @Column({
     type: DataType.STRING,
@@ -31,6 +32,7 @@ export class Role extends Model<Role, RoleCreationAttrs> {
     allowNull: false,
   })
   name: string
+
   @ApiProperty({ example: 'Admin', description: 'Role description' })
   @Column({
     type: DataType.STRING,

@@ -24,6 +24,7 @@ export class User extends Model<User, UserCreationAttrs> {
     primaryKey: true,
   })
   id: number
+
   @ApiProperty({ example: 'user@mail.com', description: 'Email address' })
   @Column({
     type: DataType.STRING,
@@ -31,18 +32,21 @@ export class User extends Model<User, UserCreationAttrs> {
     allowNull: false,
   })
   email: string
+
   @ApiProperty({ example: '12345678', description: 'Password' })
   @Column({
     type: DataType.STRING,
     allowNull: false,
   })
   password: string
+
   @ApiProperty({ example: 'true', description: 'User banned or not' })
   @Column({
     type: DataType.BOOLEAN,
     defaultValue: false,
   })
   banned: boolean
+
   @ApiProperty({
     example: 'Broke the rules of the site',
     description: 'Blocking reason',
