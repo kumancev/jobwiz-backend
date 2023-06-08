@@ -8,3 +8,6 @@ tsconfig.json
 tsconfig.eslint.json
 Dockerfile
 commitlint.config.js
+.development.env
+.gitignore
+.prettierignore
